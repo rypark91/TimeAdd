@@ -1,0 +1,86 @@
+:root {
+    --color-1: green;
+    --color-2: silver;
+    --color-3: rgb(89, 176, 89);
+  }
+@property --color-1{
+    color: green;
+}
+@property --color-2{
+    color: silver;
+}
+@property --color-3{
+    color: rgb(89, 176, 89);
+}
+*{
+    font-family: "Audiowide", sans-serif;
+    
+}
+html, body{
+    background-color: var(--color-2);
+}
+#timeForm{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+h1, p{
+    text-align: center;
+    color: var(--color-1);
+}
+h1{
+    font-size: 70px;
+    text-shadow: 0px 4px 2px var(--color-3);
+}
+label{
+    color: var(--color-1);
+}
+label, input[type='text']{
+    text-align: center;
+}
+#container{
+    width: 100%;
+    display: inline-block;
+    color: var(--color-1);
+}
+#timeList{
+    height: 300px;
+    overflow: auto;
+    border: 1px var(--color-3) solid;
+    width: 40%;
+    display: inline-block;
+}
+#totalTime{
+    width: 40%;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    top: -160px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0px 4px 2px var(--color-3);
+
+}
+
+@media(max-width: 1200px){
+    #totalTime{
+        font-size: 50px;
+    }
+}
+@media(max-width: 1000px){
+    #totalTime{
+        font-size: 36px;
+    }
+}
+@media(max-width: 750px){
+    #timeList{ 
+        width: 90%;
+        margin: 0 auto;
+    }
+    #totalTime{
+        width: 90%;
+        top: 0px;
+        font-size: 36px;
+    
+    }
+}

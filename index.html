@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Time Add</title>
+</head>
+<body>
+    <h1>Time Adding</h1>
+    <p>Need to calculate the total runtime for your videos or music or other media?  The calculator's got you covered!</p>
+    <div id="timeForm">
+        
+            <label for="">Enter hour:</label>
+            <input type="text" name="" id="hour" required/><br>
+            <label for="">Enter minute(0-59):</label>
+            <input type="text" name="" id="minute" required><br>
+            <label for="">Enter second(0-59):</label>
+            <input type="text" name="" id="second" required><br>
+            <input type="submit" value="Calculate" id="submit">
+            <input type="submit" value="Clear List" id="clear">
+        
+    </div>
+    
+    <div id="container">
+        <h2>Times:</h2>
+        <ol type="1" id="timeList">
+
+        </ol>
+        <div id="totalTime">
+            <h3>Total:<span id="hourTotal">00</span>:<span id="minuteTotal">00</span>:<span id="secondTotal">00</span></h3>
+        </div>
+        
+    </div>
+    <p>Practice Site by Ryan Park &copy;2024.</p>
+    <script src="script.js"></script>
+</body>
+</html>
